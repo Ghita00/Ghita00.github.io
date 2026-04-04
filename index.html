@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giorgio Basile — Portfolio</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════ -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <span class="brand-initials">GB</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="toggler-icon"><span></span><span></span><span></span></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#about">Chi sono</a></li>
+          <li class="nav-item"><a class="nav-link" href="#works">Lavori</a></li>
+          <li class="nav-item"><a class="nav-link" href="#timeline">Percorso</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contatti</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section id="hero" class="hero-section d-flex align-items-center">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-8">
+          <p class="hero-eyebrow reveal-up">Ciao, sono</p>
+          <h1 class="hero-title reveal-up delay-1">Giorgio<br /><em>Basile</em></h1>
+          <p class="hero-sub reveal-up delay-2">
+            Designer &amp; Developer &amp; Founder — trasformo idee complesse<br class="d-none d-md-block" />
+            in esperienze digitali memorabili attraverso i giusti strumenti per ogni esigenza.
+          </p>
+          <div class="hero-cta d-flex flex-wrap gap-3 reveal-up delay-3">
+            <a href="#works" class="btn btn-primary-custom">Vedi i miei lavori <i class="bi bi-arrow-down-right ms-1"></i></a>
+            <a href="#contact" class="btn btn-secondary-custom">Contattami</a>
+          </div>
+        </div>
+        <div class="col-lg-4 d-none d-lg-flex justify-content-end">
+          <div class="hero-badge-wrap reveal-up delay-2">
+            <div class="hero-badge">
+              <span class="badge-number">3+</span>
+              <span class="badge-label">anni di<br/>esperienza</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
+  <section id="about" class="section-pad">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <div class="about-img-wrap reveal-left">
+            <div class="about-img-frame">
+              <img src="assets/giorgio.jpeg"/>
+            </div>
+            <div class="about-deco-dot"></div>
+            <div class="about-deco-ring"></div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="reveal-right">
+            <p class="section-label">Chi sono</p>
+            <h2 class="section-title">Creo esperienze<br /><em>digitali che contano</em></h2>
+            <p class="about-body">
+              Sono Giorgio Basile, un professionista del digitale con una passione sincera per il design e la tecnologia. 
+            </p>
+            <p class="about-body">
+              Il mio approccio unisce rigore tecnico e sensibilità estetica, cercando sempre la soluzione più elegante 
+              al problema più complesso.
+            </p>
+            <p class="about-body">
+              Sono uno sviluppatore dipendente, ma nel mio tempo libero, mi fa estremamente piacere collaborare con startup, agenzie e brand per costruire prodotti digitali che le persone amano usare.
+            </p>
+            <div class="skills-grid mt-4">
+              <span class="skill-tag">UI / UX Design</span>
+              <span class="skill-tag">Front-end Dev</span>
+              <span class="skill-tag">Brand Identity</span>
+              <span class="skill-tag">Motion Design</span>
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Java Springboot</span>
+              <span class="skill-tag">Postgress</span>
+              <span class="skill-tag">Superset</span>
+              <span class="skill-tag">Docker &amp; Docker Compose</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       WORKS
+  ══════════════════════════════════════ -->
+  <section id="works" class="section-pad section-dark">
+    <div class="container">
+      <div class="text-center mb-5 reveal-up">
+        <p class="section-label light">I miei lavori</p>
+        <h2 class="section-title light">Progetti <em>selezionati</em></h2>
+      </div>
+
+      <div class="row g-4" id="worksGrid">
+
+        <!-- Biopizza -->
+        <div class="col-md-6 col-lg-4 reveal-up delay-1">
+          <div class="work-card" data-project="0">
+            <div class="work-card-thumb" style="--hue: 210">
+              <div class="work-thumb-inner">
+                <img src="assets/biopizza.png">
+              </div>
+            </div>
+            <div class="work-card-body">
+              <span class="work-tag">Website</span>
+              <h3 class="work-title">Biopizza</h3>
+              <p class="work-desc">Sito web per la pizzeria BioPizza</p>
+              <button class="work-btn">Dettagli <i class="bi bi-arrow-up-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       WORK MODALS
+  ══════════════════════════════════════ -->
+  <!-- Modal template — cloned via JS -->
+  <div class="modal fade" id="workModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content work-modal-content">
+        <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        <div class="modal-hero" id="modalHero">
+          <div class="modal-hero-icon" id="modalIcon"></div>
+        </div>
+        <div class="modal-body-custom p-4 p-lg-5">
+          <span class="work-tag mb-2" id="modalTag"></span>
+          <h2 class="modal-project-title" id="modalTitle"></h2>
+          <p class="modal-project-desc" id="modalDesc"></p>
+          <div class="modal-meta row g-3 mt-3" id="modalMeta"></div>
+          <div class="modal-tech mt-4" id="modalTech"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       TIMELINE
+  ══════════════════════════════════════ -->
+  <section id="timeline" class="section-pad">
+    <div class="container">
+      <div class="text-center mb-5 reveal-up">
+        <p class="section-label">Percorso lavorativo</p>
+        <h2 class="section-title">La mia <em>storia</em></h2>
+      </div>
+
+      <div class="timeline-wrap">
+
+        <div class="timeline-item reveal-up delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2023 — oggi</span>
+            <h3 class="timeline-role">Founder and CEO</h3>
+            <p class="timeline-company"><i class="bi bi-building me-1"></i>BacaroTech</p>
+            <p class="timeline-desc">
+              Un’iniziativa nata con l'obiettivo di divulgare l'informatica in modo semplice e accessibile a tutti. BacaroTech si propone di avvicinare le persone alle tematiche tecnologiche, demistificando argomenti complessi e rendendoli comprensibili anche per chi non ha una formazione specifica in informatica.
+            </p>
+            <div class="timeline-tags">
+              <span>Leadership</span><span>Public speaking</span><span>Lavoro in team</span><span>Organizzazione del team</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2025 — oggi</span>
+            <h3 class="timeline-role">Sviluppatore web front-end</h3>
+            <p class="timeline-company"><i class="bi bi-building me-1"></i>Mérieux NutriSciences - Italia</p>
+            <p class="timeline-desc">
+              Mi occupo della realizzazione e manutenzione degli applicativi di laboratorio, non solo lato frontend. Eseguo attività di refactoring sugli applicativi esistenti e supporto il team nelle decisioni tecnologiche, contribuendo alla scelta delle soluzioni più performanti e adeguate al contesto.
+            </p>
+            <div class="timeline-tags">
+              <span>Angular</span><span>Springboot</span><span>Node</span><span>Nifi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022 — 2025</span>
+            <h3 class="timeline-role">Sviluppatore web front-end</h3>
+            <p class="timeline-company"><i class="bi bi-building me-1"></i>Almaviva Digital Tec</p>
+            <p class="timeline-desc">
+              Mi occupo dello sviluppo e della manutenzione di applicazioni web innovative e ad alte prestazioni. 
+Lavoro principalmente sul frontend, utilizzando tecnologie moderne e best practice per garantire un'esperienza utente ottimale e soluzioni scalabili.
+            </p>
+            <div class="timeline-tags">
+              <span>Angular</span><span>Springboot</span><span>Mongo</span><span>GIS</span><span>Camunda</span><span>Node</span><span>Nifi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up delay-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2019 — 2025</span>
+            <h3 class="timeline-role">Laurea Triennale in Informatica</h3>
+            <p class="timeline-company"><i class="bi bi-building me-1"></i>Ca Foscari — Venezia Mestre</p>
+            <p class="timeline-desc">
+              Studio alternato a lavoro
+            </p>
+            <div class="timeline-tags">
+              <span>HTML/CSS</span><span>WordPress</span><span>Adobe XD</span><span>Java</span><span>C</span><span>Algoritmi e strutture dati</span>
+              <span>Ingegneria del software</span><span>Lavoro di gruppo</span><span>Postgress</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════ -->
+  <section id="contact" class="section-pad section-dark">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-7 reveal-up">
+          <p class="section-label light">Contatti</p>
+          <h2 class="section-title light">Lavoriamo<br /><em>insieme</em></h2>
+          <p class="contact-sub">
+            Hai un progetto interessante? Sono disponibile per collaborazioni freelance, consulenze e posizioni full-time.
+          </p>
+          <a href="mailto:giorgiobasile631@gmail.com" class="btn btn-primary-custom btn-lg mt-4">
+            <i class="bi bi-envelope me-2"></i>Scrivimi
+          </a>
+          <div class="social-links mt-5 d-flex justify-content-center gap-3">
+            <a href="https://www.linkedin.com/in/giorgiobasile00/" class="social-icon" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/Ghita00" class="social-icon" title="GitHub"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span class="footer-name">Giorgio Basile</span>
+      <span class="footer-copy">© 2026 — Fatto con cura(e vibe coding)</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
