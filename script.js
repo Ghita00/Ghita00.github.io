@@ -8,11 +8,84 @@ const projects = [
     title: "Biopizza",
     tag: "Website",
     hue: 210,
-    icon: "bi-phone",
+    img: "biopizza.png",
+    link: "https://www.biopizza.org/",
     desc: "Sito web per la pizzeria BioPizza",
     year: "2024",
     role: "UX Lead & Frontend",
     client: "Biopizza",
+    tech: ["Wordpress", "Figma"]
+  },
+  {
+    title: "Maxipizza",
+    tag: "Website",
+    hue: 210,
+    img: "maxipizza.jpg",
+    link: "https://www.maxipizzasanmarco.it/",
+    desc: "Sito web per la pizzeria Maxipizza",
+    year: "2024",
+    role: "UX Lead & Frontend",
+    client: "Maxipizza",
+    tech: ["Wordpress", "Figma"]
+  },
+  {
+    title: "Matteo Bonin",
+    tag: "Website",
+    hue: 210,
+    img: "matteobonin.png",
+    link: "https://www.matteobonin.it/",
+    desc: "Sito web per il mental coach Matteo Bonin",
+    year: "2026",
+    role: "UX Lead & Frontend",
+    client: "Matteo Bonin",
+    tech: ["Wordpress", "Figma"]
+  },
+  {
+    title: "Giocosamente di Irene Gatto",
+    tag: "Website",
+    hue: 210,
+    img: "giocosamente.png",
+    link: "https://www.irenegatto.it/",
+    desc: "Sito web per la psicomotricista Irene Gatto",
+    year: "2026",
+    role: "UX Lead & Frontend",
+    client: "Irene Gatto",
+    tech: ["Wordpress", "Figma"]
+  },
+  {
+    title: "Takana",
+    tag: "Website",
+    hue: 210,
+    img: "takana.jpg",
+    link: "https://takanafood.it/",
+    desc: "Sito web per il foodtruck Takana",
+    year: "2025",
+    role: "UX Lead & Frontend",
+    client: "Takana",
+    tech: ["Wordpress", "Figma"]
+  },
+  {
+    title: "Osteraia",
+    tag: "Website",
+    hue: 210,
+    img: "osteraia.jpg",
+    link: "https://osteraia.com/",
+    desc: "Sito web per il foodtruck Osteraia",
+    year: "2025",
+    role: "UX Lead & Frontend",
+    client: "Osteraia",
+    tech: ["Wordpress", "Figma"]
+  },
+  {
+    title: "SystemCOD",
+    tag: "Website",
+    hue: 210,
+    img: "systemCOD.jpg",
+    link: "https://www.systemcod.it/",
+    desc: "Sito web per il giocatore competitivo di Call of Duty SystemCOD",
+    year: "2025",
+    role: "UX Lead & Frontend",
+    client: "SystemCOD",
     tech: ["Wordpress", "Figma"]
   },
   
@@ -89,13 +162,19 @@ document.querySelectorAll('.work-card').forEach(card => {
 
     // Hero
     const hero = document.getElementById('modalHero');
-    hero.style.background = `linear-gradient(135deg, hsl(${p.hue},55%,10%) 0%, hsl(${p.hue},60%,18%) 100%)`;
-    const icon = document.getElementById('modalIcon');
-    icon.innerHTML = `<i class="bi ${p.icon}" style="color:hsl(${p.hue},70%,70%)"></i>`;
+    //hero.style.background = `linear-gradient(135deg, hsl(${p.hue},55%,10%) 0%, hsl(${p.hue},60%,18%) 100%)`;
+    console.log('assets/'+p.img)
+    hero.style.backgroundImage = `url('./assets/${p.img}')`;
+    hero.style.backgroundSize = 'cover';
+    hero.style.backgroundPosition = 'center';
+    //const icon = document.getElementById('modalIcon');
+    //icon.innerHTML = `<i class="bi ${p.icon}" style="color:hsl(${p.hue},70%,70%)"></i>`;
 
     // Texts
     document.getElementById('modalTag').textContent = p.tag;
     document.getElementById('modalTitle').textContent = p.title;
+    document.getElementById('modalTitle').setAttribute('href', p.link);
+    document.getElementById('modalTitle').setAttribute('target', "_blank");
     document.getElementById('modalDesc').textContent = p.desc;
 
     // Meta
