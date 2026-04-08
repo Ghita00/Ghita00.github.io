@@ -177,7 +177,7 @@ a { text-decoration: none; }
   transition: color .2s, background .2s;
   position: relative;
 }
-#mainNav:not(.scrolled) .nav-link { color: rgba(255,255,255,.85) !important; }
+
 .nav-link:hover { color: var(--accent) !important; background: var(--accent-dim); }
 
 /* Custom toggler */
