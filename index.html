@@ -5,7 +5,7 @@
   <meta name="google-site-verification" content="fyPba-w1q6HQyK8CaObq_7ZCiJfjDKkR1vpVwSa_rHo" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Giorgio Basile — Portfolio</title>
+  <title>Giorgio Basile</title>
 
   <!-- Bootstrap 5 CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
@@ -19,6 +19,28 @@
     rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Override: card progetti senza animazione hover, solo link diretto -->
+  <style>
+    .work-card,
+    .work-card:hover,
+    .work-card:focus {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      transform: none !important;
+      box-shadow: none !important;
+      transition: none !important;
+    }
+
+    .work-card:hover .work-card-thumb,
+    .work-card:hover .work-thumb-inner img,
+    .work-card:hover .work-title {
+      transform: none !important;
+      filter: none !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -62,8 +84,7 @@
           <p class="hero-eyebrow reveal-up">Ciao, sono</p>
           <h1 class="hero-title reveal-up delay-1">Giorgio<br /><em>Basile</em></h1>
           <p class="hero-sub reveal-up delay-2">
-            Designer &amp; Developer &amp; Founder — trasformo idee complesse<br class="d-none d-md-block" />
-            in esperienze digitali memorabili attraverso i giusti strumenti per ogni esigenza.
+            Designer &amp; Developer &amp; Founder
           </p>
           <div class="hero-cta d-flex flex-wrap gap-3 reveal-up delay-3">
             <a href="#works" class="btn btn-primary-custom">Vedi i miei lavori <i
@@ -71,14 +92,14 @@
             <a href="#contact" class="btn btn-secondary-custom">Contattami</a>
           </div>
         </div>
-        <div class="col-lg-4 d-none d-lg-flex justify-content-end">
+        <!--div class="col-lg-4 d-none d-lg-flex justify-content-end">
           <div class="hero-badge-wrap reveal-up delay-2">
             <div class="hero-badge">
               <span class="badge-number">3+</span>
               <span class="badge-label">anni di<br />esperienza</span>
             </div>
           </div>
-        </div>
+        </div-->
       </div>
     </div>
     <div class="hero-scroll-hint">
@@ -149,60 +170,25 @@
 
       <div class="row g-4" id="worksGrid">
 
-        <!-- Biopizza -->
+        <!-- Mahat Yoga -->
         <div class="col-md-6 col-lg-4 reveal-up delay-1">
-          <div class="work-card" data-project="0">
+          <a class="work-card" href="https://www.mahatyoga.com/" target="_blank" rel="noopener">
             <div class="work-card-thumb" style="--hue: 210">
               <div class="work-thumb-inner">
-                <img src="assets/biopizza.png">
+                <img src="assets/mahatyoga.jpg">
               </div>
             </div>
             <div class="work-card-body">
               <span class="work-tag">Website</span>
-              <h3 class="work-title">Biopizza</h3>
-              <p class="work-desc">Sito web per la pizzeria BioPizza</p>
-              <button class="work-btn">Dettagli <i class="bi bi-arrow-up-right"></i></button>
+              <h3 class="work-title">MahatYoga di Matteo Bonin</h3>
+              <p class="work-desc">Sito web per un dojo di Yoga</p>
             </div>
-          </div>
-        </div>
-
-        <!-- MaxiPizza -->
-        <div class="col-md-6 col-lg-4 reveal-up delay-1">
-          <div class="work-card" data-project="1">
-            <div class="work-card-thumb" style="--hue: 210">
-              <div class="work-thumb-inner">
-                <img src="assets/maxipizza.jpg">
-              </div>
-            </div>
-            <div class="work-card-body">
-              <span class="work-tag">Website</span>
-              <h3 class="work-title">MaxiPizza</h3>
-              <p class="work-desc">Sito web per la pizzeria MaxiPizza</p>
-              <button class="work-btn">Dettagli <i class="bi bi-arrow-up-right"></i></button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Matteo Bonin -->
-        <div class="col-md-6 col-lg-4 reveal-up delay-1">
-          <div class="work-card" data-project="2">
-            <div class="work-card-thumb" style="--hue: 210">
-              <div class="work-thumb-inner">
-                <img src="assets/matteobonin.png">
-              </div>
-            </div>
-            <div class="work-card-body">
-              <span class="work-tag">Website</span>
-              <h3 class="work-title">Matteo Bonin</h3>
-              <p class="work-desc">Sito web per il mental coach Matteo Bonin</p>
-              <button class="work-btn">Dettagli <i class="bi bi-arrow-up-right"></i></button>
-            </div>
-          </div>
+          </a>
         </div>
 
         <!-- Irene Gatto -->
         <div class="col-md-6 col-lg-4 reveal-up delay-1">
-          <div class="work-card" data-project="3">
+          <a class="work-card" href="https://www.irenegatto.it/" target="_blank" rel="noopener">
             <div class="work-card-thumb" style="--hue: 210">
               <div class="work-thumb-inner">
                 <img src="assets/giocosamente.png">
@@ -212,48 +198,29 @@
               <span class="work-tag">Website</span>
               <h3 class="work-title">Giocosamente di Irene Gatto</h3>
               <p class="work-desc">Sito web per la psicomotricista Irene Gatto</p>
-              <button class="work-btn">Dettagli <i class="bi bi-arrow-up-right"></i></button>
             </div>
-          </div>
+          </a>
         </div>
 
-        <!-- Takana -->
+        <!-- Matteo Bonin -->
         <div class="col-md-6 col-lg-4 reveal-up delay-1">
-          <div class="work-card" data-project="4">
+          <a class="work-card" href="https://www.matteobonin.it/" target="_blank" rel="noopener">
             <div class="work-card-thumb" style="--hue: 210">
               <div class="work-thumb-inner">
-                <img src="assets/takana.jpg">
+                <img src="assets/matteobonin.png">
               </div>
             </div>
             <div class="work-card-body">
               <span class="work-tag">Website</span>
-              <h3 class="work-title">Takana</h3>
-              <p class="work-desc">Sito web per il foodtruck Takana/p>
-                <button class="work-btn">Dettagli <i class="bi bi-arrow-up-right"></i></button>
+              <h3 class="work-title">Matteo Bonin</h3>
+              <p class="work-desc">Sito web per il mental coach Matteo Bonin</p>
             </div>
-          </div>
-        </div>
-
-        <!-- Osteraia -->
-        <div class="col-md-6 col-lg-4 reveal-up delay-1">
-          <div class="work-card" data-project="5">
-            <div class="work-card-thumb" style="--hue: 210">
-              <div class="work-thumb-inner">
-                <img src="assets/osteraia.jpg">
-              </div>
-            </div>
-            <div class="work-card-body">
-              <span class="work-tag">Website</span>
-              <h3 class="work-title">Osteraia</h3>
-              <p class="work-desc">Sito web per il foodtruck Osteraia/p>
-                <button class="work-btn">Dettagli <i class="bi bi-arrow-up-right"></i></button>
-            </div>
-          </div>
+          </a>
         </div>
 
         <!-- SystemCOD -->
         <div class="col-md-6 col-lg-4 reveal-up delay-1">
-          <div class="work-card" data-project="6">
+          <a class="work-card" href="https://www.systemcod.it/" target="_blank" rel="noopener">
             <div class="work-card-thumb" style="--hue: 210">
               <div class="work-thumb-inner">
                 <img src="assets/systemCOD.jpg">
@@ -263,40 +230,77 @@
               <span class="work-tag">Website</span>
               <h3 class="work-title">SystemCOD</h3>
               <p class="work-desc">Sito web per il giocatore competitivo SystemCOD</p>
-              <button class="work-btn">Dettagli <i class="bi bi-arrow-up-right"></i></button>
             </div>
-          </div>
+          </a>
+        </div>
+
+        <!-- Osteraia -->
+        <div class="col-md-6 col-lg-4 reveal-up delay-1">
+          <a class="work-card" href="https://osteraia.com/" target="_blank" rel="noopener">
+            <div class="work-card-thumb" style="--hue: 210">
+              <div class="work-thumb-inner">
+                <img src="assets/osteraia.jpg">
+              </div>
+            </div>
+            <div class="work-card-body">
+              <span class="work-tag">Website</span>
+              <h3 class="work-title">Osteraia</h3>
+              <p class="work-desc">Sito web per il foodtruck Osteraia</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Takana -->
+        <div class="col-md-6 col-lg-4 reveal-up delay-1">
+          <a class="work-card" href="https://takanafood.it/" target="_blank" rel="noopener">
+            <div class="work-card-thumb" style="--hue: 210">
+              <div class="work-thumb-inner">
+                <img src="assets/takana.jpg">
+              </div>
+            </div>
+            <div class="work-card-body">
+              <span class="work-tag">Website</span>
+              <h3 class="work-title">Takana</h3>
+              <p class="work-desc">Sito web per il foodtruck Takana</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- MaxiPizza -->
+        <div class="col-md-6 col-lg-4 reveal-up delay-1">
+          <a class="work-card" href="https://www.maxipizzasanmarco.it/" target="_blank" rel="noopener">
+            <div class="work-card-thumb" style="--hue: 210">
+              <div class="work-thumb-inner">
+                <img src="assets/maxipizza.jpg">
+              </div>
+            </div>
+            <div class="work-card-body">
+              <span class="work-tag">Website</span>
+              <h3 class="work-title">MaxiPizza</h3>
+              <p class="work-desc">Sito web per la pizzeria MaxiPizza</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Biopizza -->
+        <div class="col-md-6 col-lg-4 reveal-up delay-1">
+          <a class="work-card" href="https://www.biopizza.org/" target="_blank" rel="noopener">
+            <div class="work-card-thumb" style="--hue: 210">
+              <div class="work-thumb-inner">
+                <img src="assets/biopizza.png">
+              </div>
+            </div>
+            <div class="work-card-body">
+              <span class="work-tag">Website</span>
+              <h3 class="work-title">Biopizza</h3>
+              <p class="work-desc">Sito web per la pizzeria BioPizza</p>
+            </div>
+          </a>
         </div>
 
       </div>
     </div>
   </section>
-
-  <!-- ══════════════════════════════════════
-       WORK MODALS
-  ══════════════════════════════════════ -->
-  <!-- Modal template — cloned via JS -->
-  <div class="modal fade" id="workModal" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content work-modal-content">
-        <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
-          <i class="bi bi-x-lg"></i>
-        </button>
-        <div class="modal-hero" id="modalHero">
-          <div class="modal-hero-icon" id="modalIcon"></div>
-        </div>
-        <div class="modal-body-custom p-4 p-lg-5">
-          <span class="work-tag mb-2" id="modalTag"></span>
-          <h2 class="modal-project-title">
-            <a href="" id="modalTitle"></a>
-          </h2>
-          <p class="modal-project-desc" id="modalDesc"></p>
-          <div class="modal-meta row g-3 mt-3" id="modalMeta"></div>
-          <div class="modal-tech mt-4" id="modalTech"></div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- ══════════════════════════════════════
        TIMELINE
@@ -399,8 +403,8 @@
             <i class="bi bi-envelope me-2"></i>Scrivimi
           </a>
           <div class="social-links mt-5 d-flex justify-content-center gap-3">
-            <a href="https://www.linkedin.com/in/giorgiobasile00/" class="social-icon" title="LinkedIn"><i
-                class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/giorgiobasile00/" class="social-icon" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/_ghita00/" class="social-icon" title="Instagram"><i class="bi bi-instagram"></i></a>
             <a href="https://github.com/Ghita00" class="social-icon" title="GitHub"><i class="bi bi-github"></i></a>
           </div>
         </div>
