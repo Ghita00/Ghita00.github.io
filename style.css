@@ -726,3 +726,131 @@ a { text-decoration: none; }
 @media (max-width: 480px) {
   .btn-primary-custom, .btn-outline-custom { width: 100%; text-align: center; justify-content: center; }
 }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   GLOBAL OVERRIDES: no list markers and no horizontal page scroll
+   Keep this block at the end so it overrides Bootstrap and widgets.
+══════════════════════════════════════════════════════════════ */
+
+/* Prevent flex/grid children and long strings from forcing page width. */
+html {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+*, *::before, *::after {
+  min-width: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg,
+iframe,
+embed,
+object {
+  max-width: 100%;
+}
+
+img,
+video,
+canvas {
+  height: auto;
+}
+
+a,
+p,
+h1, h2, h3, h4, h5, h6,
+span,
+div,
+td,
+th,
+code,
+pre {
+  overflow-wrap: anywhere;
+}
+
+/* Remove bullets/numbers from every list, including nested and injected lists. */
+ul,
+ol,
+menu {
+  list-style: none !important;
+  padding-inline-start: 0 !important;
+  margin-inline-start: 0 !important;
+}
+
+ul li,
+ol li,
+menu li {
+  list-style: none !important;
+}
+
+li::marker {
+  content: "" !important;
+  font-size: 0 !important;
+}
+
+/* Third-party content (for example Sessionize) must stay inside the viewport. */
+#eventi,
+#eventi .container,
+#sessionize-events,
+#sessionize-events *,
+#eventi script + *,
+#eventi iframe {
+  max-width: 100%;
+  min-width: 0;
+}
+
+#eventi,
+#sessionize-events {
+  overflow-x: clip;
+}
+
+#eventi table,
+#sessionize-events table {
+  width: 100% !important;
+  max-width: 100% !important;
+  table-layout: fixed;
+}
+
+@media (max-width: 767px) {
+  .container,
+  .container-fluid,
+  .row,
+  [class*="col-"] {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    overflow-wrap: anywhere;
+  }
+
+  .section-pad {
+    padding-inline: 0;
+  }
+
+  .about-img-wrap {
+    max-width: 100%;
+  }
+
+  .timeline-content {
+    padding: 1.1rem;
+  }
+
+  .hero-cta {
+    width: 100%;
+  }
+
+  .hero-cta > a {
+    max-width: 100%;
+  }
+}
